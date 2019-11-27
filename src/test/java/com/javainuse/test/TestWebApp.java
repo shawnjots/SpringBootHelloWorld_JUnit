@@ -29,7 +29,7 @@ public class TestWebApp extends SpringBootHelloWorldTests {
 		mockMvc.perform(get("/employee")).andExpect(status().isOk())
 				.andExpect(content().contentType("application/json;charset=UTF-8"))
 				.andExpect(jsonPath("$.name").value("emp1")).andExpect(jsonPath("$.designation").value("manager"))
-				.andExpect(jsonPath("$.empId").value("1")).andExpect(jsonPath("$.salary").value(4000));
+				.andExpect(jsonPath("$.empId").value("1")).andExpect(jsonPath("$.salary").value(5000));
 
 	}
 
